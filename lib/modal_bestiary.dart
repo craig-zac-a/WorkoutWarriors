@@ -32,6 +32,11 @@ class _BestiaryState extends State<Bestiary> {
     });
   }
 
+  void _displayBossName()
+  {
+    final currentBoss = bosses[currentBossIndex];
+  }
+
   @override
   Widget build(BuildContext context) {
     final currentBoss = bosses[currentBossIndex];

@@ -30,24 +30,29 @@ class MyApp extends StatelessWidget {
           )
 
         ),
-        home: const HomePage(
-          userName: 'Zachary',
-          // For demonstration, the main level is still a simple int.
-          mainLevel: 20,
-          // Here we now pass example XP values for each stat.
-          agilityLevel: 8,
-          agilityTotalXp: 532,
-          agilityNextThreshold: 600,
-          agilityPrevThreshold: 500,
-          strengthLevel: 5,
-          strengthTotalXp: 210,
-          strengthNextThreshold: 250,
-          strengthPrevThreshold: 200,
-          enduranceLevel: 7,
-          enduranceTotalXp: 380,
-          enduranceNextThreshold: 420,
-          endurancePrevThreshold: 360,
-        ),
+        home: Stack(
+          children: const [
+            HomePage(
+              userName: 'Zachary',
+              // For demonstration, the main level is still a simple int.
+              mainLevel: 20,
+              // Here we now pass example XP values for each stat.
+              agilityLevel: 8,
+              agilityTotalXp: 532,
+              agilityNextThreshold: 600,
+              agilityPrevThreshold: 500,
+              strengthLevel: 5,
+              strengthTotalXp: 210,
+              strengthNextThreshold: 250,
+              strengthPrevThreshold: 200,
+              enduranceLevel: 7,
+              enduranceTotalXp: 380,
+              enduranceNextThreshold: 420,
+              endurancePrevThreshold: 360,
+            ),
+          ],
+        )
+        
       ),
     );
   }

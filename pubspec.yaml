@@ -11,6 +11,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  just_audio: ^0.9.32
 
   english_words: ^4.0.0
   provider: ^6.1.2
@@ -35,7 +36,17 @@ flutter:
     - assets/icons/go_backward.png
     - assets/icons/back_button.png
     - assets/images/spotlight.png
+    - assets/images/pushups.gif
+    - assets/images/jumping_jacks.gif
+    - assets/images/lunges.gif
+    - assets/images/situps.gif
+    - assets/images/squats.gif
+    - assets/images/burpees.gif
+    - assets/images/planking.gif
+    - assets/images/jogging.gif
+    - assets/images/avatar.png
     - assets/boss_artifacts/boss1_hidden.png
     - assets/boss_artifacts/boss1_revealed.png
     - assets/boss_artifacts/boss2_hidden.png
     - assets/boss_artifacts/boss2_revealed.png
+    - assets/music/background_music.mp3

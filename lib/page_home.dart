@@ -4,6 +4,8 @@ import 'page_home.dart';
 import 'page_profile.dart';
 import 'page_settings.dart';
 import 'modal_bestiary.dart';
+import 'page_howto.dart';
+import 'background_music_player.dart';
 
 class HomePage extends StatelessWidget {
   final String userName;
@@ -48,6 +50,8 @@ class HomePage extends StatelessWidget {
         // You can add an AppBar if desired.
         body: Column(
             children: [
+              
+            BackgroundMusicPlayer(),
               // Top fixed section: Profile/Settings and Friends/Leaderboards
               Column(
                 mainAxisSize: MainAxisSize.min,
@@ -128,16 +132,12 @@ class HomePage extends StatelessWidget {
               Expanded(
                 child: Center(
                   child: Container(
-                    width: 120,
-                    height: 180,
                     decoration: BoxDecoration(
-                      color: Colors.grey.shade300,
                       borderRadius: BorderRadius.circular(8),
                     ),
                     alignment: Alignment.center,
-                    child: const Text(
-                      "Avatar\n(Your Buff Dude)",
-                      textAlign: TextAlign.center,
+                    child: Image.asset(
+                      'assets/images/avatar.png',
                     ),
                   ),
                 ),
@@ -242,7 +242,10 @@ class HomePage extends StatelessWidget {
                           ),
                           tooltip: 'How-To',
                           onPressed: () {
-                            
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(builder: (context) => const HowTo()),
+                            );
                           },
                       ),
                     ],
